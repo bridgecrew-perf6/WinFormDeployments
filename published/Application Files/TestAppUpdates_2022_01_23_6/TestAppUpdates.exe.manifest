@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="TestAppUpdates.exe" version="2022.01.23.6" publicKeyToken="410892f8fb1ab5ed" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="TestAppUpdates" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="TestAppUpdates.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Newtonsoft.Json.dll" size="701992">
+      <assemblyIdentity name="Newtonsoft.Json" version="13.0.0.0" publicKeyToken="30AD4FE6B2A6AEED" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>tiSUnfiw46YVP9+3MKfG9JkLZZLuDZIuF4hDPSdmEPM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TestAppUpdates.exe" size="8664">
+      <assemblyIdentity name="TestAppUpdates" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>EY5vXgl4yIKpObuwrDXCiE3iZorgt7l+wTgh0xLaWvc=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="TestAppUpdates.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DESKTOP-28MIJ9O\nick" issuerKeyHash="6325eff02b7ed0ecbc011e4e95f2f73ccb01f50b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>t7UEYq5bCAJh8CwclObAuqs5IxxQaMbdEvW1hEhaaS4=</DigestValue></Reference></SignedInfo><SignatureValue>sWkk6n8zxOimYVlxn0bMGtnIxFfBEZLo74fx5y1cbbR7D1wPBxvew+/mijw+OcwqcuWt0baVNDjCI+Mm8AW0b9I737cJ1kbZoBANselsrCOw8fzLfmzaxcbu/Vd3vLZYoaQJF6uAb+GYpXdNOnm96BemJvQTAjE8/OSY8lNdMqQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>3Bx1dOZrm4qeak1USFON1++Leernym8RhbdT9E7u7AeymYhQvrM4T8Urlx2+/bnM3hPos5joB9tzEzO47DK4PkExdspvGikecywzcOq0r4Z/hRO7/xY1+YWtyTDbfkLDqs7CEWebD7tpek93lnZlQenFB1KRID39tbAXhsVsbhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2e695a4884b5f512ddc668501c2339abbac0e6941c2cf06102085bae6204b5b7" Description="" Url=""><as:assemblyIdentity name="TestAppUpdates.exe" version="2022.01.23.6" publicKeyToken="410892f8fb1ab5ed" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-28MIJ9O\nick</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>V0oimi9YxKNV9vnNU9eN8ObUuohqZwZM2YsogINqyoQ=</DigestValue></Reference></SignedInfo><SignatureValue>xp/r2Ojdo+733gznL7WU/Ar3zpEiQpFHVnWgsQ3qSxX3nkFfPz7OrhAoKS+fM+XigkkvePZqiOmMVUcOJo8sfGAw2Qz3fZ+tlfGTmbXOE/eNVqimvKLP6QZNFDviRoc3s98PL8bFdsFG8ZSa3TtTHxwHUPQM8lbV0ar0s2tHSI4=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>3Bx1dOZrm4qeak1USFON1++Leernym8RhbdT9E7u7AeymYhQvrM4T8Urlx2+/bnM3hPos5joB9tzEzO47DK4PkExdspvGikecywzcOq0r4Z/hRO7/xY1+YWtyTDbfkLDqs7CEWebD7tpek93lnZlQenFB1KRID39tbAXhsVsbhk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQSO40iYB/abRA18X/SamgszANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigARABFAFMASwBUAE8AUAAtADIAOABNAEkASgA5AE8AXABuAGkAYwBrMB4XDTIyMDEyMzIwNTYxNFoXDTIzMDEyNDAyNTYxNFowMzExMC8GA1UEAx4oAEQARQBTAEsAVABPAFAALQAyADgATQBJAEoAOQBPAFwAbgBpAGMAazCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA3Bx1dOZrm4qeak1USFON1++Leernym8RhbdT9E7u7AeymYhQvrM4T8Urlx2+/bnM3hPos5joB9tzEzO47DK4PkExdspvGikecywzcOq0r4Z/hRO7/xY1+YWtyTDbfkLDqs7CEWebD7tpek93lnZlQenFB1KRID39tbAXhsVsbhkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQCTHtHzXH710Jg2lo8hvRqUqC/jMQPIPtsbsr7ma1+fwYhOw1s46fp8P/uXo5TTrJi7DtKMl2Apw41oVY0UlRQAYz7U4wqmaLeD7LTTRZVx0FgI+yahJ1uy+pLFMfsjSU07fUwC0jfWjjjqMtuzW0yM+aSzAzOlMomo4bdqsld+og==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
